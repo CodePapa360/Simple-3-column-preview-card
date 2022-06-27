@@ -1,0 +1,110 @@
+:root{
+    --Light-gray: hsl(0, 0%, 95%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Cyan: hsl(184, 100%, 22%);
+    --Dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    background-color: var(--Light-gray);
+    cursor: default;
+}
+
+.card-container{
+    margin: 4.5rem auto;
+    padding: 0;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: 3.1rem;
+    width: 19.2rem;
+    height: 31.2rem;
+    position: relative;
+}
+
+.card-title{
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--Light-gray);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.card-paragraph{
+    font-family: "Lexend Deca", sans-serif;
+    color: var(--Transparent-white);
+    line-height: 1.5rem;
+}
+
+.card-button{
+    background-color: var(--Light-gray);
+}
+
+.orage-card{
+    background-color: var(--Bright-orange);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.cyan-card{
+    background-color: var(--Cyan);
+}
+
+.dark-cyan-card{
+    background-color: var(--Dark-cyan);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.card-image{
+    margin-bottom: 2rem;
+}
+
+.card-button{
+    background-color: var(--Light-gray);
+    border: 1px solid var(--Light-gray);
+    width: 9rem;
+    height: 3rem;
+    border-radius: 40px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 3.1rem;
+    color: var(--Cyan);
+}
+
+.card-button:hover{
+   color: var(--Light-gray);
+   background-color: rgba(0, 0, 0, 0);
+   cursor: pointer;
+}
+
+@media(max-width: 58rem) {
+    .dark-cyan-card{
+        border-radius: 0 0 1rem 1rem;
+    }
+    .cyan-card{
+        border-radius: 0 1rem 1rem 0;
+    }
+   }
+
+   @media(max-width: 39.4rem) {
+    .orage-card{
+        border-radius: 1rem 1rem 0 0;
+    }
+    .cyan-card{
+        border-radius: 0;
+    }
+   }
